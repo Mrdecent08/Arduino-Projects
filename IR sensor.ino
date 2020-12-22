@@ -19,13 +19,13 @@ void loop()
   {
   	Serial.println(results.value,HEX);
   	irrecv.resume();
-  	if(results.value==0xFD08E7)
+  	if(results.value==0xFD08F7)
   	{
-  		digital.write(2,HIGH);
+  		digitalWrite(2,HIGH);
   	}
-  	else if(results.value==)xFD8877)
+  	else if(results.value==0xFD8877)
   	{
- 		digital.write(2,LOW);
+ 		digitalWrite(2,LOW);
   	}
    }
   delay(20);
